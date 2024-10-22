@@ -92,11 +92,12 @@
         <!-- Contact Section Start -->
         <section class="contact" id="contact">
             <h1 data-aos="zoom-in-down">My <span>Contact</span></h1>
-            <form action="">
-                <input type="text" name="name" placeholder="Your Name *">
-                <input type="number" name="phone" placeholder="Your Phone No *">
-                <input type="email" name="email"  placeholder="Your Email Address*">
-                <textarea name="textarea" placeholder="Write Massage Here *"></textarea>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="51a66d2e-26b8-4d0c-bb8d-c4b906b0309c">
+                <input type="text" name="name" placeholder="Your Name *" required>
+                <input type="number" name="phone" placeholder="Your Phone No *" required>
+                <input type="email" name="email"  placeholder="Your Email Address*" required>
+                <textarea name="textarea" placeholder="Write Massage Here *" required   ></textarea>
                 <div>
                     <button type="submit">Send Massage</button>
                 </div>

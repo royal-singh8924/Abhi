@@ -15,7 +15,9 @@ body {
     position: relative;
     scroll-behavior: smooth;
 }
-
+body{
+    overflow-x: hidden;
+}
 .con p {
     height: 60px;
     width: 60px;
@@ -89,7 +91,7 @@ span {
 
 .home {
     padding-top: 80px;
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     padding-left: 120px;
@@ -180,7 +182,7 @@ span {
 /* Home Section End */
 /* About Section Start */
 .about {
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
@@ -243,7 +245,7 @@ span {
 /* About Section End */
 /* Skills Section Start */
 .skills {
-    height: 100vh;
+    height: auto;
     width: 100%;
     background-color: #333;
 }
@@ -253,18 +255,116 @@ span {
     text-align: center;
 }
 
+
+.card-wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.card {
+    height: 250px;
+    width: 250px;
+    border: 5px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.card i {
+    font-size: 80px;
+}
+
+.card h3 {
+    font-size: 35px;
+}
+
+.card:hover {
+    background-color: black;
+    color: white;
+}
+
+
 /* Skills Section End */
 /* project Section Start */
-.project{
-    height: 100vh;
+.pro{
+    height: auto;
     width: 100%;
     background-color: #444;
+    padding-bottom: 30px;
 }
-.project h1{
+.pro h1{
     padding-top: 80px;
     font-size: 50px;
     text-align: center;
 }
+
+.project-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+}
+
+.project {
+    height: auto;
+    width: 90%;
+    /* background-color: burlywood; */
+    /* border: 2px solid white; */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    overflow: hidden;
+}
+
+.project-img {
+    height: 50vh;
+    width: 45%;
+    /* background-color: yellow; */
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid red;
+}
+
+.project-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-text {
+    height: 100%;
+    width: 50%;
+    /* background-color: lime; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px
+}
+
+.project-text h3{
+    font-size: 60px;
+}
+.project-text h2 {
+    font-size: 45px;
+}
+
+.project-text i:hover {
+    cursor: pointer;
+}
+
 /* project Section End */
 /* Contact Section Start */
 .contact{
@@ -327,3 +427,15 @@ button{
     font-size: 18px;
 }
 /* Contact Section End */
+/* Footer Section Start */
+.footer{
+    height: 10vh;
+    width: 100%;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: #fff;
+}
+/* Footer Section End */
